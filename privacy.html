@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — CanAI</title>
+  <meta name="description" content="What CanAI stores on your machine and what leaves it: a short, plain privacy note for the local studio.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page { max-width: 680px; margin-inline: auto; padding: 152px 24px 96px; }
+    .page h1 { font-size: 48px; line-height: 1; font-weight: 700; letter-spacing: -0.02em; }
+    .page .lead { margin-top: 16px; font-size: 18px; line-height: 28px; color: var(--t2); }
+    .page h2 { margin-top: 48px; font-size: 24px; line-height: 32px; }
+    .page p, .page li { margin-top: 12px; font-size: 16px; line-height: 24px; color: var(--t2); }
+    .page ul { padding-left: 24px; }
+    .back { display: inline-block; margin-bottom: 48px; }
+    .updated { margin-top: 48px; font-family: var(--mono); font-size: 12px; line-height: 16px; color: var(--t3); }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="text-link back" href="index.html">Back to canai</a>
+    <h1>Privacy</h1>
+    <p class="lead">CanAI is a local application. This page says, in plain words, what stays on your machine and what leaves it.</p>
+
+    <h2>What stays on your machine</h2>
+    <p>Boards, generated media, project files, settings, macros and logs live in folders next to the application. Nothing in those folders is sent to us, because there is no &ldquo;us&rdquo; on the other end: the application does not include telemetry, analytics or an account system.</p>
+
+    <h2>What leaves your machine</h2>
+    <p>Only generation requests. When you press Generate, CanAI sends your prompt and chosen references to fal.ai using your own API key. Fal.ai processes the request under its own terms and privacy policy, which you accept when you create your fal.ai account.</p>
+
+    <h2>Your API key</h2>
+    <p>The key is stored in a settings file on your machine. It is used only to sign your own requests to fal.ai. It is not included in backups of your boards and is never shown in the interface after you save it.</p>
+
+    <h2>Tablet access</h2>
+    <p>If you enable tablet access, boards are served over your home network to a browser you log into with a code. That traffic stays inside your network.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this note? Open an issue in the project repository.</p>
+
+    <p class="updated">Updated October 2026</p>
+  </main>
+</body>
+</html>
